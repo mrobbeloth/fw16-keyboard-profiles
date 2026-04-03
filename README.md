@@ -106,13 +106,9 @@ import it via the [Framework Keyboard Configurator](https://keyboard.frame.work/
 
 ## Accessing Layer 2
 
-You need a key mapped to activate Layer 2. Options:
-
-1. **Use the existing layer switching** — check if your macropad firmware
-   already has a layer key (e.g., Fn or a `MO(2)` key).
-2. **Remap a key** — e.g., change `KC_NLCK` (NumLock) on Layer 0 to
-   `MO(2)` so holding NumLock activates the macro layer.
-3. **Use `LT(2, KC_NLCK)`** — NumLock on tap, Layer 2 on hold.
+The NumLock key (index 0) is mapped to `LT(2, KC_NLCK)`:
+- **Tap** — toggles NumLock as usual
+- **Hold** — activates Layer 2 (the VS Code macro grid)
 
 ## Project Structure
 

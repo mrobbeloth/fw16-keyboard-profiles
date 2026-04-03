@@ -110,6 +110,17 @@ The NumLock key (index 0) is mapped to `LT(2, KC_NLCK)`:
 - **Tap** — toggles NumLock as usual
 - **Hold** — activates Layer 2 (the VS Code macro grid)
 
+## Custom Firmware (OSU Theme Layer Indicator)
+
+The `firmware/macropad/` directory contains a custom QMK keymap that
+automatically changes the RGB lighting when Layer 2 is active:
+
+- Layer 0 (Numpad): Scarlet (#BB0000) — your normal animation
+- Layer 2 (VS Code Macros): Gray (#666666) breathing — instant visual feedback
+
+See [firmware/macropad/README.md](firmware/macropad/README.md) for build
+and flash instructions.
+
 ## Project Structure
 
 ```
@@ -117,6 +128,10 @@ fw16-keyboard-profiles/
 ├── baseline/                  # Original exported layouts (do not edit)
 │   ├── framework_laptop_16_keyboard___ansi.layout.json
 │   └── framework_laptop_16_rgb_macropad.layout.json
+├── firmware/
+│   └── macropad/              # Custom QMK firmware (OSU theme layer indicator)
+│       ├── keymap.c
+│       └── README.md
 ├── profiles/
 │   ├── keyboard/              # Keyboard profiles
 │   └── macropad/              # Macropad profiles
